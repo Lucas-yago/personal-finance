@@ -6,6 +6,7 @@ import { Item } from './types/Item';
 import { Category } from './types/Category';
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
 import { TableArea } from './components/TableArea';
+import { InfoArea } from './components/InfoArea';
 
 
 const App = () => {
@@ -27,11 +28,10 @@ const App = () => {
       <C.Body>
 
         {/* Área de informações */}
-
+        <InfoArea />
         {/* Área de inserções */}
 
         {/* Tabela de itens */}
-
         <TableArea list={filteredList} />
         
       </C.Body>
