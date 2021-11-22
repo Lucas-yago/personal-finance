@@ -19,9 +19,9 @@ export const TableArea = ({ list }: Props) => {
                     <C.TableHeaderColumn width={150}>Valor</C.TableHeaderColumn>
                 </tr>
             </thead>
-            <tbody>
-                {list.map((item) => (
-                    <TableItem  item={item}/>
+            <tbody >
+                {list.map((item, index) => (
+                    <TableItem  key={index} item={item}/>
                 ))}
             </tbody>
         </C.Table>
